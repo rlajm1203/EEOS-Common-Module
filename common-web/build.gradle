@@ -6,7 +6,7 @@ dependencies {
 
     compileOnly 'org.springframework:spring-web'
     compileOnly 'org.springframework:spring-context'
-ㅈ
+
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 }
