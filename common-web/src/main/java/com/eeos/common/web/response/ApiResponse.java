@@ -1,4 +1,4 @@
-package com.eeos.common.presentation.response;
+package com.eeos.common.web.response;
 
 import lombok.Getter;
 import org.springframework.http.HttpHeaders;

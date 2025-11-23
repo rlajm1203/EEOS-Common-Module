@@ -1,4 +1,4 @@
-package com.eeos.common.presentation.response;
+package com.eeos.common.web.response;
 
 public enum MessageCode {
 	CREATE("201", "생성 성공"),
