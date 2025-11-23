@@ -6,13 +6,21 @@ group = 'com.eeos'
 version = '0.0.1'
 description = 'EEOS-Common-Module'
 
+ext {
+    moduleVersions = [
+            'common-dto'      : '0.0.1',
+            'common-exception': '0.0.1',
+            'common-web'      : '0.0.1'
+    ]
+}
+
 subprojects {
     apply plugin: 'java'
     apply plugin: 'io.spring.dependency-management'
     apply plugin: 'maven-publish'
 
     group = rootProject.group
-    version = rootProject.version
+    version = rootProject.moduleVersions.getOrDefault(project.name, rootProject.version)
 
     java {
         toolchain {
