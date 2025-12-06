@@ -11,7 +11,8 @@ ext {
             'common-dto'      : '0.0.1',
             'common-exception': '0.0.1',
             'common-web'      : '0.0.1',
-            'common-jpa'      : '0.0.1'
+            'common-jpa'      : '0.0.1',
+            'common-domain'   : '0.0.1'
     ]
 }
 
@@ -53,6 +54,14 @@ subprojects {
         publications {
             mavenJava(MavenPublication) {
                 from components.java
+                versionMapping {
+                    usage('java-api') {
+                        fromResolutionOf('runtimeClasspath')
+                    }
+                    usage('java-runtime') {
+                        fromResolutionResult()
+                    }
+                }
                 pom {
                     name = project.name
                     description = project.description ?: rootProject.description

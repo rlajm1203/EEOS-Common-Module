@@ -1,2 +1,2 @@
 rootProject.name = 'commons'
-include 'common-web', 'common-exception', 'common-util', 'common-jpa'
+include 'common-web', 'common-exception', 'common-util', 'common-jpa', 'common-domain'
