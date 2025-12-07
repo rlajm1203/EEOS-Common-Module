@@ -1,4 +1,4 @@
-package com.eeos.common.web.response;
+package com.eeos.common.web.dto.response;
 
 import lombok.Getter;
 import org.springframework.http.HttpHeaders;
