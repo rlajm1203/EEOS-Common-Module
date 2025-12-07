@@ -12,7 +12,8 @@ ext {
             'common-exception': '0.0.1',
             'common-web'      : '0.0.1',
             'common-jpa'      : '0.0.1',
-            'common-domain'   : '0.0.1'
+            'common-domain'   : '0.0.1',
+            'common-application' : '0.0.1'
     ]
 }
 
