@@ -11,5 +11,5 @@ dependencies {
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 
     // EEOS-Common-Application
-    implementation 'com.eeos:common-application:0.0.1'
+    compileOnly 'com.eeos:common-application:0.0.1'
 }
