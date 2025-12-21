@@ -10,7 +10,7 @@ ext {
     moduleVersions = [
             'common-dto'      : '0.0.1',
             'common-exception': '0.0.1',
-            'common-web'      : '0.0.2',
+            'common-web'      : '0.0.3',
             'common-jpa'      : '0.0.1',
             'common-domain'   : '0.0.1',
             'common-application' : '0.0.2'
