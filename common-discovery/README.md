@@ -1,5 +1,7 @@
 ## common-discovery 모듈
 
+> **중요**: Spring Cloud OpenFeign을 사용하는 애플리케이션은 `@FeignClient(name = "...")`만으로 서비스 디스커버리와 로드밸런싱이 자동 적용되므로, 이 모듈 없이도 통신이 가능합니다. WebClient/RestTemplate/gRPC 등 Feign 이외 채널에서 동일한 디스커버리 로직을 재사용하거나, 직접 URI를 다뤄야 하는 경우에 이 모듈을 사용하세요.
+
 `common-discovery`는 `serviceId`를 실제 호출 가능한 `URI`로 변환해 주는 `ServiceDiscoveryClient` 인터페이스와 자동 구성(`ServiceDiscoveryAutoConfiguration`)을 제공합니다. Spring Cloud에서 제공하는 `LoadBalancerClient` 구현체(예: Eureka, Consul 등)에만 의존하므로, 구체적인 서비스 디스커버리 솔루션은 이 모듈을 사용하는 애플리케이션이 선택합니다.
 
 ### 주요 구성요소
