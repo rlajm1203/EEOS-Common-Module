@@ -13,7 +13,8 @@ ext {
             'common-web'      : '0.0.3',
             'common-jpa'      : '0.0.1',
             'common-domain'   : '0.0.1',
-            'common-application' : '0.0.2'
+            'common-application' : '0.0.2',
+            'common-discovery': '0.0.1'
     ]
 }
 
@@ -51,6 +52,7 @@ subprojects {
     dependencyManagement {
         imports {
             mavenBom "org.springframework.boot:spring-boot-dependencies:3.3.0"
+            mavenBom "org.springframework.cloud:spring-cloud-dependencies:2023.0.3"
         }
     }
 
